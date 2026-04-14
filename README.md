@@ -188,8 +188,8 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/nlp-06-nlp-pipeline
-cd nlp-06-nlp-pipeline
+git clone https://github.com/vnallam09/nlp-06.git
+cd nlp-06
 code .
 ```
 
