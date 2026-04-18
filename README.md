@@ -1,13 +1,10 @@
-# nlp-06-nlp-pipeline
+# NLP Pipeline — Web Document Analysis
 
-<!--additional badges are common. In your custom copy of the project, change `denisecase` to your GitHub account -->
-<!--To run link checks: open your project on GitHub, click the Actions tab, select "Check Links", click "Run workflow" -->
-
-[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://denisecase.github.io/nlp-06-nlp-pipeline/)
+[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://vnallam09.github.io/nlp-06/)
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
-[![CI Status](https://github.com/denisecase/nlp-06-nlp-pipeline/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/denisecase/nlp-06-nlp-pipeline/actions/workflows/ci-python-zensical.yml)
-[![Check Links](https://github.com/denisecase/nlp-06-nlp-pipeline/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/denisecase/nlp-06-nlp-pipeline/actions/workflows/links.yml)
+[![CI Status](https://github.com/vnallam09/nlp-06/actions/workflows/ci-python-zensical.yml/badge.svg?branch=main)](https://github.com/vnallam09/nlp-06/actions/workflows/ci-python-zensical.yml)
+[![Check Links](https://github.com/vnallam09/nlp-06/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/vnallam09/nlp-06/actions/workflows/links.yml)
 
 > Structured EVTL pipeline for reliable extraction, cleaning, and NLP analysis of HTML web page data.
 > Adds spaCy-based text cleaning and derived NLP features to the Module 5 pipeline.
@@ -123,29 +120,19 @@ but fast, auditable preprocessing pipelines using tools like spaCy
 remain common in production when cost, speed, and
 explainability matter.
 For more see, the associated
-[documentation](https://denisecase.github.io/nlp-06-nlp-pipeline/)
+[documentation](https://vnallam09.github.io/nlp-06/)
 for this project.
 
 ## Key Files
 
-These files define the EVTL pipeline and the components you will update for your project.
-
-- **src/nlp/pipeline_web_html.py** - Main pipeline orchestrator (no changes required)
-- **src/nlp/config_case.py** - Configuration for page URL and paths (<mark>**copy and edit**</mark> for your project)
-- **src/nlp/stage01_extract.py** - Extract stage: fetches HTML from a web page (no changes required)
-- **src/nlp/stage02_validate_case.py** - Validate stage: inspects and verifies HTML structure (<mark>**copy and edit**</mark>)
-- **src/nlp/stage03_transform_case.py** - Transform stage: extracts, cleans, and engineers NLP features (<mark>**copy and edit**</mark>)
-- **src/nlp/stage04_load.py** - Load stage: writes output to persistent storage (no changes required)
-- **pyproject.toml** - Project metadata and dependencies (<mark>**update**</mark> authorship, links, and dependencies)
-- **zensical.toml** - Documentation configuration (<mark>**update**</mark> authorship and links)
-
-## First: Follow These Instructions
-
-Follow the [step-by-step workflow guide](https://denisecase.github.io/pro-analytics-02/workflow-b-apply-example-project/) to complete:
-
-1. Phase 1. **Start & Run**
-2. Phase 2. **Change Authorship**
-3. Phase 3. **Read & Understand**
+- **src/nlp/pipeline_web_html_teja.py** - Main pipeline orchestrator
+- **src/nlp/config_teja.py** - Configuration: `PAGE_URL` set to "Attention Is All You Need" (arXiv 1706.03762)
+- **src/nlp/stage01_extract.py** - Extract stage: fetches HTML from a web page
+- **src/nlp/stage02_validate_teja.py** - Validate stage: inspects and verifies HTML structure
+- **src/nlp/stage03_transform_teja.py** - Transform stage: extracts, cleans, and engineers NLP features
+- **src/nlp/stage04_analyze_teja.py** - Analyze stage: frequency distributions and visualizations
+- **src/nlp/stage05_load.py** - Load stage: writes output to persistent storage
+- **pyproject.toml** - Project metadata and dependencies
 
 ## Challenges
 
@@ -421,15 +408,8 @@ of the pipeline.
 
 ## Example Output
 
-<!-- TODO: change image links to point to your outputs -->
-<!-- For example:
+Paper analyzed: **Attention Is All You Need** (arXiv 1706.03762)
 
-![Bar Chart](./data/processed/yourname_top_tokens.png)
+![Bar Chart](./docs/images/teja_top_tokens.png)
 
-![Word Cloud](./data/processed/yourname_wordcloud.png)
-
--->
-
-![Bar Chart](./docs/images/case_top_tokens.png)
-
-![Word Cloud](./docs/images/case_wordcloud.png)
+![Word Cloud](./docs/images/teja_wordcloud.png)
